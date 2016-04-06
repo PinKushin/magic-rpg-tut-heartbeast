@@ -19,7 +19,7 @@
       <sprite>sprites\sleavestwo</sprite>
       <sprite>sprites\sleavesthree</sprite>
       <sprite>sprites\sleavesfour</sprite>
-      <sprite>sprites\streefive</sprite>
+      <sprite>sprites\sleavesfive</sprite>
     </sprites>
     <sprites name="Plants">
       <sprite>sprites\sbushone</sprite>
@@ -41,6 +41,9 @@
     <objects name="parents">
       <object>objects\oshadowpar</object>
       <object>objects\ocharacterpartpar</object>
+    </objects>
+    <objects name="level">
+      <object>objects\otree</object>
     </objects>
   </objects>
   <rooms name="rooms">
