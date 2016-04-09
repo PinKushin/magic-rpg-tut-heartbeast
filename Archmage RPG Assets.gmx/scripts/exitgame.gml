@@ -1,0 +1,3 @@
+///exitgame();
+game_end();
+

@@ -15,21 +15,45 @@
       <sprite>sprites\splayermask</sprite>
     </sprites>
     <sprites name="Trees">
-      <sprite>sprites\sleavesone</sprite>
-      <sprite>sprites\sleavestwo</sprite>
-      <sprite>sprites\sleavesthree</sprite>
-      <sprite>sprites\sleavesfour</sprite>
-      <sprite>sprites\sleavesfive</sprite>
+      <sprite>sprites\stree</sprite>
     </sprites>
     <sprites name="Plants">
       <sprite>sprites\sbushone</sprite>
       <sprite>sprites\sbushtwo</sprite>
     </sprites>
+    <sprite>sprites\sfireball</sprite>
+    <sprite>sprites\sicespell</sprite>
+    <sprite>sprites\sbutton</sprite>
+    <sprite>sprites\sborder</sprite>
+    <sprite>sprites\srobot</sprite>
+    <sprite>sprites\sbeamspell</sprite>
+    <sprite>sprites\scrate</sprite>
+    <sprite>sprites\scrateshadow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bgrass</background>
+    <background>background\btileset</background>
+    <background>background\bcrate</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\partfireinit.gml</script>
+    <script>scripts\particeinit.gml</script>
+    <script>scripts\partsparkinit.gml</script>
+    <scripts name="enemys">
+      <script>scripts\enemywander.gml</script>
+      <script>scripts\enemychase.gml</script>
+    </scripts>
+    <scripts name="gui">
+      <script>scripts\startgame.gml</script>
+      <script>scripts\exitgame.gml</script>
+    </scripts>
+    <script>scripts\drawwall.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fbuttons</font>
+    <font>fonts\fstats</font>
+  </fonts>
   <objects name="objects">
     <objects name="player">
       <object>objects\ocapebottom</object>
@@ -37,17 +61,41 @@
       <object>objects\ocapetop</object>
       <object>objects\ohead</object>
       <object>objects\oplayer</object>
+      <object>objects\oplayerstats</object>
+      <objects name="spells">
+        <object>objects\ofireball</object>
+        <object>objects\oicespell</object>
+        <object>objects\obeamspell</object>
+      </objects>
     </objects>
     <objects name="parents">
+      <object>objects\ospellpar</object>
       <object>objects\oshadowpar</object>
       <object>objects\ocharacterpartpar</object>
+      <object>objects\ospellbuttonpar</object>
     </objects>
     <objects name="level">
-      <object>objects\otree</object>
+      <object>objects\otreebase</object>
+      <object>objects\otreeleaves</object>
     </objects>
+    <objects name="particals">
+      <object>objects\ops</object>
+    </objects>
+    <objects name="buttons">
+      <object>objects\ofireballspellbutton</object>
+      <object>objects\oicespellbutton</object>
+      <object>objects\obeamspellbutton</object>
+      <object>objects\oselectedbutton</object>
+      <object>objects\obutton</object>
+    </objects>
+    <object>objects\oenemyrobot</object>
+    <object>objects\ocrate</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rstartscreen</room>
     <room>rooms\rforest</room>
+    <room>rooms\raitest</room>
+    <room>rooms\rspells</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
